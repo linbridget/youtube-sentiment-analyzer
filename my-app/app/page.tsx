@@ -1,13 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import NavLinks from "@/components/NavLinks";
 
 export default function Home() {
   const [youtubeUrl, setYoutubeUrl] = useState("");
   const [topic, setTopic] = useState("");
 
   return (
-    <div className="flex flex-1 flex-col items-center bg-white font-sans">
+    <div className="relative flex flex-1 flex-col items-center bg-white font-sans">
+      <div className="absolute top-6 right-6">
+        <NavLinks />
+      </div>
       <main className="flex w-full max-w-2xl flex-1 flex-col gap-10 px-6 py-16 sm:px-8">
         {/* Header */}
         <header className="flex flex-col gap-3 text-center">
