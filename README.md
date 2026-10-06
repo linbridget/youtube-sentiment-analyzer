@@ -1,1 +1,1 @@
-# youtube-comment-analyzer
+# youtube-sentiment-analyzer
